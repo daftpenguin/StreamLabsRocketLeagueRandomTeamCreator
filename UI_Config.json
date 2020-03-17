@@ -1,0 +1,65 @@
+{
+	"output_file": "Settings/settings.json",
+    "RegisterCommand": {
+		"type": "textbox",
+		"value": "!register",
+		"label": "Register Command",
+		"tooltip": "Adds user to list",
+		"group": "Registration"
+    },
+	"UnregisterCommand": {
+		"type": "textbox",
+		"value": "!unregister",
+		"label": "Unregister Command",
+		"tooltip": "Removes user from list",
+		"group": "Registration"
+	},
+	"RegisteredCommand": {
+		"type": "textbox",
+		"value": "!registered",
+		"label": "Registered command",
+		"tooltip": "Responds with the number of registered players",
+		"group": "Registration"
+	},
+	"NumTeamsCommand": {
+		"type": "textbox",
+		"value": "!numteams",
+		"label": "NumTeams command",
+		"tooltip": "Responds with the number of teams that can be created with the current player list with the given team size",
+		"group": "Registration"
+	},
+	"CreateTeamsCommand": {
+		"type": "textbox",
+		"value": "!createteams",
+		"label": "Create Teams command",
+		"tooltip": "Accepts an integer > 1 to create teams of that size",
+		"group": "Team Creation"
+	},
+	"CreateTeamsPermission": {
+		"type": "dropdown",
+		"value": "everyone",
+		"items": ["everyone","moderator","subscriber","user_specific","editor"],
+		"label": "Create Teams command Permission",
+		"tooltip": "Who is able to use the create teams command",
+		"group": "Team Creation"
+    },
+	"CreateTeamsInfo": {
+        "type": "textbox",
+        "value": "",
+        "label": "Create Teams Info",
+        "tooltip": "This field should only be filled when using the user_specific permission.",
+        "group": "Team Creation"
+	},
+	"MaxMMR": {
+		"type": "textbox",
+		"value": "2600",
+		"label": "Max MMR",
+		"tooltip": "Blocks user from registering with an MMR greater than this value. Leave blank to allow any MMR."
+	},
+	"AlertMMR": {
+		"type": "textbox",
+		"value": "2000",
+		"label": "Alert MMR",
+		"tooltip": "If user enters an MMR greater than this value, they will be registered but it will a trigger an \"@mods\" message warning them that the user may be trolling. Leave blank to not alert."
+	}
+}
