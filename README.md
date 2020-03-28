@@ -1,4 +1,4 @@
-# StreamLabsRocketLeagueRandomTeamCreator
+# RL Random Team Creator
 Streamlabs Chatbot script allows viewers to register themselves to be assigned to a team to play in a tournament. Team creation can be based on best match based on MMR, or randomly chosen.
 
 ## Installation
