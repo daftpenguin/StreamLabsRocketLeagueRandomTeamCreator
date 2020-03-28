@@ -230,7 +230,7 @@ def Execute(data):
                 Parent.SendStreamMessage("@{0} MMRs that high are not allowed. Try again with a lower MMR.".format(data.User))
             else:
                 Players[data.User] = { "twitch": data.User, "mmr": mmr, "rocketID": rocketID }
-                Parent.SendStreamMessage("{0} was added to the player list. Type !bothelp if you have questions.".format(player_to_string(Players[data.User])))
+                Parent.SendStreamMessage("{0} was added to the player list.".format(player_to_string(Players[data.User])))
                 if ScriptSettings.AlertMMR is not None and mmr > ScriptSettings.AlertMMR:
                     Parent.SendStreamMessage("@mods @{0} is either an RL god or trolling".format(data.User))
 
