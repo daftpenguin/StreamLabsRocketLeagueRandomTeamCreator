@@ -13,7 +13,7 @@ class MySettings(object):
             self.RegisteredCommand = "!registered"
             self.NumTeamsCommand = "!numteams"
             self.CreateTeamsCommand = "!createteams"
-            self.CreateTeamsPermission = "moderator"
+            self.CreateTeamsPermission = "Moderator"
             self.CreateTeamsInfo = ""
             self.MaxMMR = None
             self.AlertMMR = None

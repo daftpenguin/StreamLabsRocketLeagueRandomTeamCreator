@@ -4,7 +4,7 @@
   "RegisteredCommand": "!registered",
   "NumTeamsCommand": "!numteams",
   "CreateTeamsCommand": "!createteams",
-  "CreateTeamsPermission": "moderator",
+  "CreateTeamsPermission": "Moderator",
   "CreateTeamsInfo": "",
   "MaxMMR": "2600",
   "AlertMMR": "2000"
