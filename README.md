@@ -21,7 +21,7 @@ Clicking on the Random Team Creator script from the scripts list will bring up t
 
 Note: these instructions assume the default command names.
 
-Commands:
+**Commands:**
 
 `!createteams <num> <type>`: replace `<num>` with any number to create teams with that number of players. The `<type>` can either be `best`, `cluster`, or `random`. The type affects how players will be matched into teams, and if not specified, the `best` matching is used. More details on team creation types are explained in the `Team Creation` section. To create teams for doubles with the `best` matching, run: `!createteams 2`. For random matching for standard: `!createteams 3 random`.
 
@@ -43,4 +43,4 @@ The `random` team creation type will just randomize the queue of players and gen
 
 The `best` team creation type will order the entire queue based on their MMRs, and split the ordered queue into teams. The ordering of players with the same MMR is determined by their registration order.
 
-The `cluster` team creation was added to add some randomization to the `best` team creation. The `cluster` team creation essentially uses the `best` team creation to generate clusters of 3 times the team size, then each cluster is used to randomly create teams from. In other words, if 12 players register and `!createteams 2 cluster` is run, the players are ordered by MMR and 3 teams are created randomly from the top 6 players, and another 3 teams from the bottom 6 players. Note that if the number of registered players is less than 3 times the team size, team creation will be the same as `random` team creation.
+The `cluster` team creation was added to add some randomization to the `best` team creation. The `cluster` team creation essentially uses the `best` team creation to generate clusters of 3 times the team size, then random teams are created from each cluster. In other words, if 12 players register and `!createteams 2 cluster` is run, the players are ordered by MMR and 3 teams are created randomly from the top 6 players, and another 3 teams from the bottom 6 players. Note that if the number of registered players is less than 3 times the team size, team creation will be the same as `random` team creation.
