@@ -178,7 +178,7 @@ ScriptName = "Random Team Creator"
 Website = "http://twitch.tv/DaftPenguinRL"
 Description = "!register will add users. !createteams will create teams and clear the list. !registered will show how many players were added. !unregister will remove player from list."
 Creator = "DaftPenguin"
-Version = "2.0.5"
+Version = "2.0.6"
 
 #---------------------------
 #   Define Global Variables
