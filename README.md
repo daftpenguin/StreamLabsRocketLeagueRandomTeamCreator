@@ -7,7 +7,7 @@ Some preparation is needed to setup Streamlabs Chatbot to import scripts. First,
 
 https://github.com/StreamlabsSupport/Streamlabs-Chatbot/wiki/Prepare-&-Import-Scripts
 
-Note that you have to connect both your bot and streamer account to Twitch in Streamlabs Chatbot before the scripts tab will show.
+Note that you have to connect Streamlabs to both your bot and streamer accounts before the scripts tab will show.
 
 Next, download the zip file from releases and import it as a script into Chatbot:
 
