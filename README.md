@@ -11,7 +11,7 @@ Note that you have to connect Streamlabs to both your bot and streamer accounts 
 
 Next, download the zip file from releases and import it as a script into Chatbot:
 
-https://github.com/daftpenguin/StreamLabsRocketLeagueRandomTeamCreator/releases/download/v2.0.6/RandomTeamCreator-v2.0.6.zip
+https://github.com/daftpenguin/StreamLabsRocketLeagueRandomTeamCreator/releases/download/v2.0.7/RandomTeamCreator-v2.0.7.zip
 
 ## Configuration
 

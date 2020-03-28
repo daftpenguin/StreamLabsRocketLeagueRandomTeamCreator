@@ -175,10 +175,10 @@ from Settings_Module import MySettings
 #   [Required] Script Information
 #---------------------------
 ScriptName = "Random Team Creator"
-Website = "http://twitch.tv/DaftPenguinRL"
-Description = "!register will add users. !createteams will create teams and clear the list. !registered will show how many players were added. !unregister will remove player from list."
+Website = "https://github.com/daftpenguin"
+Description = "Allows users to register to a queue with their Rocket League rank or MMR so teams may be generated for tournaments."
 Creator = "DaftPenguin"
-Version = "2.0.6"
+Version = "2.0.7"
 
 #---------------------------
 #   Define Global Variables
