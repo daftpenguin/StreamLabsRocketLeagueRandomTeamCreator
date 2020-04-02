@@ -7,7 +7,7 @@ Some preparation is needed to setup Streamlabs Chatbot to import scripts. First,
 
 https://github.com/StreamlabsSupport/Streamlabs-Chatbot/wiki/Prepare-&-Import-Scripts
 
-Note that you have to connect Streamlabs to both your bot and streamer accounts before the scripts tab will show.
+*Note that you have to connect Streamlabs to both your bot and streamer accounts before the scripts tab will show.*
 
 Next, download the zip file from releases and import it as a script into Chatbot:
 
@@ -19,15 +19,29 @@ Clicking on the Random Team Creator script from the scripts list will bring up t
 
 ## Usage
 
-Note: these instructions assume the default command names.
+Note: these instructions assume the default command names. Command names can be configured by the streamer.
 
-**Commands:**
+### Quick Reference:
+
+User registration: `!register <mmr_or_rank> <rocketID (optional)>`
+
+Team creation (mods or streamer only, unless configured by streamer): `!createteams <team_size>`
+
+Unregister: `!unregister`
+
+Unregister another user (mods or streamer only): `!unregister <twitch_username>`
+
+Number of players registered: `!registered`
+
+Number of teams that can be created: `!numteams <team_size>`
+
+### More Details:
 
 `!createteams <num> <type>`: replace `<num>` with any number to create teams with that number of players. The `<type>` can either be `best`, `cluster`, or `random`. The type affects how players will be matched into teams, and if not specified, the `best` matching is used. More details on team creation types are explained in the `Team Creation` section. To create teams for doubles with the `best` matching, run: `!createteams 2`. For random matching for standard: `!createteams 3 random`.
 
 `!register <mmr_or_rank> <rocketID>`: registers the user calling the command with the given mmr or rank. The rocketID is optional, but the mmr or rank is required even if teams will be generated randomly. The rocketID's are used in the team print out when teams are created, so users don't have to @ each other with their rocketID's for party creation (no one ever uses this feature). The MMR or rank can be given as either a number, the first letter of the ranks name followed by the number (eg: c1), or typed out like "diamond 1", "plat 2", "gc", "Grand Champ", etc. I've tried to handle all the cases. These ranks are mapped to an MMR near the start of division 3 for that rank, except Grand Champs which are all mapped to 1515 unless an MMR is given.
 
-`!unregister <twitch_username>`: there are two variations of this command. Any user that calls the `!unregister` command will be unregistered from the queue. Mods and the streamer are also able to unregister other users by given the twitch username of the user to unregister. To unregister DaftPenguin from the queue, a mod or streamer can run: `!unregister daftpenguin`.
+`!unregister <twitch_username>`: there are two variations of this command. Any user that calls the `!unregister` command will be unregistered from the queue. Mods and the streamer are also able to unregister other users by giving the twitch username of the user to unregister. To unregister DaftPenguin from the queue, a mod or streamer can run: `!unregister daftpenguin`.
 
 `!registered`: bot will respond with the number of players registered in the queue.
 
